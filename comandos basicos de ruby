@@ -1,0 +1,86 @@
+comandos importantes para Ruby
+
+irb < abrir terminal de ruby
+puts
+gets
+print
+.chomp quita el salto de linea!!!!!
+puts "el valor de a es #{a}" interpolacion
+.to_i para un fixnum
+.to_f para un flotante
+.class te dice que es 
+a = [1,6,9,4,5, "hola"] para hacer un arreglo
+a = :hola es un simbolo (arreglo con menos memoria)
+a = {"clave1": "valor1", "clave2": “valor2"} hash
+hora = Time.now
+puts "a vale 2" if a == 2
+puts "a es distinto de 2"unless a == 2
+5.times { puts "repitiendo" }
+5.times { |i| puts "repitiendo #{i}" }
+a = Array.new(3,0) un arreglo de 3 veces cero 
+.methods.sort estos son los metodos del arreglo
+.length longitud
+.count contar el arreglo
+.dup copia un array
+.sort ordena un arreglo
+.psuh agrega un valor al final
+.pop quita un valor ultimo
+.each { |i| puts i + 1 } itera un arreglo 
+.split("") hace un arreglo___________________
+.each_with_index {|value, index| puts "#{index]: #{value +1}"} iterar con indice
+.map{|e| e*2}		mapea
+.reject{ |x| x%2 == 0} rechaza
+.select{ |x| x%2 == 0} selecciona
+.inject(0){|x, sum| sum += x} inserta 
+.group_by {|ele| ele.class} agrupa por
+a = Hash.new crear un hash
+a[“X”] = “Y	agregar elemento al hash
+hash.select{|k,v| condición}
+
+
+- Se les llama 
+métodos de clase
+ todas
+las instancias de la clase
+
+
+ instancia
+específico para cada
+instancia de la clase.
+
+
+ATTR_READER 
+ATTR_WRITER
+
+class Perro
+ def initialize(edad)
+ @edad = edad
+ end
+
+ def edad
+ @edad
+ end
+
+ def edad=(edad)
+ @edad = edad
+ end
+end
+perro1 
+
+
+
+class Fraccion
+ def initialize(a, b) ////////////////inicia
+ @numerador = a
+ @denominador = b
+ end
+ def get_numerador()//////////////////genera
+ @numerador
+ end
+ def set_numerador(valor)//////////////pone un valor
+ @numerador = valor
+ end
+end
+
+
+
